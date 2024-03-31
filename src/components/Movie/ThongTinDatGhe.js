@@ -9,19 +9,19 @@ class ThongTinDatGhe extends Component {
         <div className="mt-5">
           <button className="gheDuocChon"></button>
           <span className="text-light" style={{ fontSize: "28px" }}>
-            ghế đã đặt
+            Booked Seats
           </span>
           <br />
 
           <button className="gheDangChon"></button>
           <span className="text-light" style={{ fontSize: "28px" }}>
-            ghế đang đặt
+            Seats Being Booked
           </span>
           <br />
 
           <button className="ghe" style={{ marginLeft: 0 }}></button>
           <span className="text-light" style={{ fontSize: "28px" }}>
-            ghế chưa đặt
+            Available Seats
           </span>
         </div>
 
@@ -29,8 +29,8 @@ class ThongTinDatGhe extends Component {
           <table className="table" border="2">
             <thead>
               <tr className="text-light" style={{ fontSize: "25px" }}>
-                <th>Số ghế</th>
-                <th>Giá</th>
+                <th>Seat Number</th>
+                <th>Price</th>
                 <th></th>
               </tr>
             </thead>
@@ -46,7 +46,7 @@ class ThongTinDatGhe extends Component {
                           this.props.dispatch(huyGheAction(gheDangDat.soGhe));
                         }}
                       >
-                        Hủy
+                        Cancel
                       </button>
                     </td>
                   </tr>
@@ -56,7 +56,7 @@ class ThongTinDatGhe extends Component {
             <tfoot className="text-warning">
               <tr>
                 <td></td>
-                <td>Tổng tiền</td>
+                <td>Total</td>
                 <td>
                   {this.props.danhSachGheDangDat.reduce(
                     (tongTien, gheDangDat, index) => {

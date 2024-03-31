@@ -38,11 +38,9 @@ export default class BaiTapBookingTicket extends Component {
           <div className="container-fluid">
             <div className="row">
               <div className="col-8 text-center">
-                <div className="text-warning display-5">
-                  ĐẶT VÉ XEM PHIM CYBERLEARN.VN
-                </div>
+                <div className="text-warning display-5">TICKET BOOKING</div>
                 <div className="mt-3 text-light" style={{ fontSize: "25px" }}>
-                  Màn hình
+                  Screen
                 </div>
                 <div
                   className="mt-2"
@@ -58,7 +56,7 @@ export default class BaiTapBookingTicket extends Component {
               </div>
               <div className="col-4">
                 <div style={{ fontSize: "32px" }} className="text-light">
-                  DANH SÁCH GHẾ BẠN CHỌN
+                  SEAT SELECTION
                 </div>
                 <ThongTinDatGhe />
               </div>
